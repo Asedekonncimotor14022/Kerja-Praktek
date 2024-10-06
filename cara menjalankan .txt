@@ -1,0 +1,16 @@
+1.buka xampp
+2.buat database di mysql
+CREATE TABLE percetakan_db (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    chatbot_conversations,
+    orders, tracking_orders
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+3.Install Node.js
+4.-Buka terminal atau command prompt dan arahkan ke folder proyek:
+cd C:\Users\ILA\Desktop\ProjectChatbot
+-kemudian jalankan perintah: npm init -y
+-insttal dependencies: npm install express mysql
+5.jalakan server: node server.js
+-Jika server berjalan tanpa masalah, Anda akan melihat pesan:Server is running on http://localhost:5000
+-Buka browser dan masukkan URL berikut untuk mengakses aplikasi chatbot Anda:http://localhost:5000
