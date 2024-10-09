@@ -27,7 +27,7 @@
 
 
 #chatHeader {
-  background-color: #6200ea;
+  background-color: #007bff;
   color: white;
   padding: 10px;
   display: flex;
@@ -75,7 +75,7 @@
   padding: 10px;
   gap: 10px;
   border-top: 1px solid #ccc;
-  background-color: #6200ea;
+  background-color: #007bff;
 }
 
 #userInput {
@@ -101,4 +101,126 @@
 #sendButton img {
   width: 100%; 
   height: 100%; 
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #007bff; /* Warna biru */
+  color: white;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.navbar-top a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar-top a img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.navbar-logo img {
+  width: 100px;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-search input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  margin-right: 5px;
+}
+
+.navbar-search button {
+  background-color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-search button img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar-links img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #0066cc; /* Biru lebih gelap untuk bawah */
+}
+
+.navbar-bottom a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Cart icon aligned to the right under login */
+.cart-container {
+  margin-top: 5px;
+}
+
+.cart-container a img {
+  width: 80px;
+  height: 80px;
 }

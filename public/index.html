@@ -3,33 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <title>Market Place</title>
 </head>
 <body>
-    <div id="chatbot-container">
-        <div id="chatHeader">
-            <span>Chat support</span>
-            <button id="closeChat">X</button>
-        </div>
-        <div id="chatBody">
-            <div id="messages">
-                <!-- Percakapan muncul di sini -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-top">
+                <div class="navbar-left">
+                    <a href="#">Seller Centre</a> |
+                    <a href="#">Mulai Berjualan</a> |
+                    <a href="#">Download</a>
+                    <a href="#">Ikuti kami di</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="navbar-right">
+                    <div class="navbar-links">
+                        <a href="#"><i class="fa-regular fa-bell"></i>Notifikasi</a>
+                        <a href="#"><i class="fa-regular fa-circle-question"></i>Bantuan</a>
+                        <a href="#"><i class="fa-solid fa-globe"></i>Bahasa Indonesia</a>
+                        <a href="#">Daftar</a>
+                        <a href="#">Log In</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-main">
+                <div class="navbar-logo">
+                    <img src="images/onepiece.png" alt="Logo">
+                </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Daftar & Dapat Voucher Gratis">
+                <button><img src="images/search.png" alt="Search"></button>
+            </div>
+            <div class="cart-container">
+                <a href="#"><img src="images/shopping.png" alt="shopping"></a>
             </div>
         </div>
-        <div id="inputArea">
-            <input type="text" id="userInput" placeholder="Write a message...">
-            <button id="sendButton">
-                <img src="images/send.png" alt="Send Icon">
-            </button>
+    </header>
+</body>
+<div id="chatbot-container">
+    <div id="chatHeader">
+        <span>Chat support</span>
+        <button id="closeChat">X</button>
+    </div>
+    <div id="chatBody">
+        <div id="messages">
+            <!-- Percakapan muncul di sini -->
         </div>
     </div>
-
-    <!-- untuk membuka chat -->
-    <div id="openChat">
-        <img src="images/chat.png" alt="Chat Icon">
+    <div id="inputArea">
+        <input type="text" id="userInput" placeholder="Write a message...">
+        <button id="sendButton">
+            <img src="images/send.png" alt="Send Icon">
+        </button>
     </div>
+</div>
+<div id="openChat">
+    <img src="images/chat.png" alt="Chat Icon">
+</div>
 
-    <script src="script.js"></script>
-</body>
+<script src="script.js"></script>
 </html>
